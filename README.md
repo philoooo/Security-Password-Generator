@@ -41,13 +41,25 @@ for char in range(1, nr_numbers + 1):
 
 The password is further randomized using the `random.shuffle()` function from the `random` module. This adds addition security and hardening to the password complexity, as the letters, symbols and numbers are concatenated in random order.
 ```
-print(password_list)
+
 random.shuffle(password_list)
-print(password_list)
 
 password = ""
 for char in password_list:
     password += char
 
 print(f"Your password is: {password}")
+```
+
+Here is a test case to show the user experience from my editor:
+
+```
+Welcome to the PyPassword Generator!
+How many letters would you like in your password?
+8
+How many symbols would you like?
+1
+How many numbers would you like?
+3
+Your password is: w49ZFcASx3o*
 ```
