@@ -1,6 +1,9 @@
 <p align="center"> Password Security Hardening Generator </p>
     
-   ____________________![https://picsum.photos/460/300](https://github.com/philoooo/Security-Password-Generator/blob/main/gettyimages-1281515873-640x640.jpg)
+<p align="center">
+  <img src="https://github.com/philoooo/Security-Password-Generator/blob/main/gettyimages-1281515873-640x640.jpg" width="460" height="300" />
+</p>
+
 
 I imported the `random` python package. I also created a list of all letters, numbers 0-9, and symbols. Symbols can be adjusted to a system's security preferences. 
 ```
