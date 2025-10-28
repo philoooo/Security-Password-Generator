@@ -5,7 +5,7 @@
 </p>
 
 
-I imported the `random` python package. I also created a list of all letters, numbers 0-9, and symbols. Symbols can be adjusted to a system's security preferences. 
+1. I imported the `random` python package. I also created a list of all letters, numbers 0-9, and symbols. Symbols can be adjusted to a system's security preferences. 
 ```
 import random
 
@@ -15,7 +15,7 @@ numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 
 symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
 ```
-Each variable accepts user input for different dimensions of the password. Depending on password length and complexity standards for the system, a user can assign any number of letters, symbols and numbers to their password.
+2. Each variable accepts user input for different dimensions of the password. Depending on password length and complexity standards for the system, a user can assign any number of letters, symbols and numbers to their password.
 
 ```
 print("Welcome to the Security Password Generator!")
@@ -27,7 +27,7 @@ nr_symbols = int(input(f"How many symbols would you like?\n"))
 nr_numbers = int(input(f"How many numbers would you like?\n"))
 ```
 
-Here, these for loops use the `random.choice()` function from the `random` module to randomly assign characters from the aforementioned lists of letters, symbols and numbers.
+3. Here, these for loops use the `random.choice()` function from the `random` module to randomly assign characters from the aforementioned lists of letters, symbols and numbers.
 
 ```
 password_list = []
@@ -42,7 +42,7 @@ for char in range(1, nr_numbers + 1):
     password_list.append(random.choice(numbers))
 ```
 
-The password is further randomized using the `random.shuffle()` function from the `random` module. This adds addition security and hardening to the password complexity, as the letters, symbols and numbers are concatenated in random order.
+4. The password is further randomized using the `random.shuffle()` function from the `random` module. This adds addition security and hardening to the password complexity, as the letters, symbols and numbers are concatenated in random order.
 ```
 
 random.shuffle(password_list)
@@ -54,7 +54,7 @@ for char in password_list:
 print(f"Your password is: {password}")
 ```
 
-Here is a test case to show the user experience from my editor:
+5. Here is a test case to show the user experience from my editor:
 
 ```
 Welcome to the PyPassword Generator!
